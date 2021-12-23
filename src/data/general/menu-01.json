@@ -16,11 +16,6 @@
             "id": 3,
             "text": "Projects",
             "path": "portfolio"
-        },
-        {
-            "id": 4,
-            "text": "Contact",
-            "path": "contacts"
         }
     ]
 }

@@ -5,7 +5,9 @@ import SkillShare, { SkillItem } from "@ui/skill-share";
 import Image from "@ui/image";
 import sanityClient from "../../../client";
 import React, { useEffect, useState } from "react";
+import Button from "@ui/button";
 import Icon from "@ui/icon";
+import Pdf from "../../../assets/my-resume.pdf";
 import {
     ImageType,
     HeadingType,
@@ -13,6 +15,8 @@ import {
     SocialType,
     SkillType,
 } from "@utils/types";
+import { SocialIcon} from "react-social-icons";
+import { ChevronRight } from "react-feather";
 
 const HeroArea = ({ data, id }) => {
 
@@ -49,12 +53,9 @@ const HeroArea = ({ data, id }) => {
                                     {data?.headings?.[1] && (
                                         <h1 className="title">
                                             <span
-                                                className="title-main"
-                                                dangerouslySetInnerHTML={{
-                                                    __html: data.headings[1]
-                                                        .content,
-                                                }}
-                                            />
+                                                style={{color: "#4eff3f"}}>
+                                                Reggie Padgett II
+                                            </span>
                                             <br />
                                             {data?.animated_texts && (
                                                 <span
@@ -81,7 +82,7 @@ const HeroArea = ({ data, id }) => {
                                     )}
                                     {data?.texts?.[0] && (
                                         <div>
-                                            <p className="description">
+                                            <p className="subtitle">
                                                 {data.texts[0].content}
                                             </p>
                                         </div>
@@ -89,33 +90,31 @@ const HeroArea = ({ data, id }) => {
                                 </div>
                                 <div className="row">
                                     <div className="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
-                                        {data?.socials && (
-                                            <div className="social-share-inner-left">
-                                                <span className="title">
-                                                    find me on
+                                        <div className="social-share-inner-left">
+                                            <span className="title">
+                                                Contact Me
+                                            </span>
+                                            <div>
+                                                <span className="p-3">
+                                                   <SocialIcon url="https://www.linkedin.com/in/reginaldpadgett2/" />
                                                 </span>
-                                                <Social>
-                                                    {data.socials.map(
-                                                        (social) => (
-                                                            <SocialLink
-                                                                key={social.id}
-                                                                path={
-                                                                    social.path
-                                                                }
-                                                            >
-                                                                <Icon
-                                                                    name={
-                                                                        social.icon
-                                                                    }
-                                                                />
-                                                            </SocialLink>
-                                                        )
-                                                    )}
-                                                </Social>
+                                                <span className="p-3">
+                                                   <SocialIcon  url="mailto:reggie.padgett2@gmail.com" />
+                                                </span>
+
                                             </div>
-                                        )}
+                                        </div>
                                     </div>
+                                    <div className="pt--45 col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                                        <a href={Pdf}>
+                                            <Button renderAs="button" className="thumbs-icon">
+                                                <span>Resume</span>
+                                            </Button>
+                                        </a>
+                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
