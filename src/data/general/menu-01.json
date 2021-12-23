@@ -1,0 +1,26 @@
+{
+    "id": "main-menu-1",
+    "section": "menu-1",
+    "menu": [
+        {
+            "id": 1,
+            "text": "Home",
+            "path": "home"
+        },
+        {
+            "id": 2,
+            "text": "Work History",
+            "path": "blog"
+        },
+        {
+            "id": 3,
+            "text": "Projects",
+            "path": "portfolio"
+        },
+        {
+            "id": 4,
+            "text": "Contact",
+            "path": "contacts"
+        }
+    ]
+}
