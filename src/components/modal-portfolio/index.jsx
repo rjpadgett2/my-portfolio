@@ -47,6 +47,7 @@ const serializers = {
     }
 }
 
+
 const PortfolioModal = ({
     show,
     setShow,
@@ -114,13 +115,12 @@ const PortfolioModal = ({
                                         <ChevronRight />
                                     </Button>
                                 </a>
-                                <a href={appLink}>
-                                    <Button enderAs="button" className="thumbs-icon">
-                                        <span>App Link</span>
-                                        <ChevronRight />
-                                    </Button>
-                                </a>
-
+                                {/*<a href={appLink}>*/}
+                                {/*    <Button enderAs="button" className="thumbs-icon">*/}
+                                {/*        <span>App Link</span>*/}
+                                {/*        <ChevronRight/>*/}
+                                {/*    </Button>*/}
+                                {/*</a>*/}
                             </div>
                         </div>
                     </div>
