@@ -101,7 +101,9 @@ const HeroArea = ({ data, id }) => {
                                                 <span className="p-3">
                                                    <SocialIcon  url="mailto:reggie.padgett2@gmail.com" />
                                                 </span>
-
+                                                <span className="p-3">
+                                                   <SocialIcon  bgColor="green" url="https://github.com/rjpadgett2" />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
