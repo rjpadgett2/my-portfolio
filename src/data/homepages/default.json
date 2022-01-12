@@ -13,13 +13,16 @@
                 }
             ],
             "animated_texts": [
-                "Developer.",
-                "Professional Coder.",
-                "Problem Solver"
+                "Full Stack Developer",
+                "Ionic",
+                "Angular",
+                "ReactJS",
+                "Spring Boot",
+                "Unity"
             ],
             "texts": [
                 {
-                    "content": "Solving problems with code"
+                    "content": "I love building things with code"
                 }
             ],
             "skills": [
